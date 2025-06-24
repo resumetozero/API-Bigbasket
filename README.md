@@ -15,9 +15,6 @@ To get the data directly without browser automation (e.g., Selenium), we reverse
    https://www.bigbasket.com/listing-svc/v2/products?type=pc&slug=...
    ```
 4. Copy the **Request URL**, **Headers**, and **Cookies** from any product listing call.
-5. Paste them into separate JSON files:
-   - `headers.json`
-   - `cookies.json`
 
 This helps mimic real user behavior and bypass bot detection.
 
@@ -164,6 +161,8 @@ Use this file for:
 - `204 No Content`: Server is returning empty data (rate-limited or invalid slug)
 - `403 Forbidden`: Headers or cookies are likely expired/invalid
 - `404 Not Found`: Invalid API path (slug or endpoint issue)
+- `429 Too Many Requests`: Rate limit exceeded (too many requests sent in a short time; server is throttling to prevent abuse)
+
 
 ---
 
