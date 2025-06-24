@@ -142,7 +142,7 @@ Results are saved in:
 ```
 all_processed_products.json
 ```
-
+<img src="output.png" alt="BigBasket Scraper in Action">
 Use this file for:
 - Price comparison
 - Product database
